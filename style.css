@@ -1,9 +1,11 @@
 body {
+    font-family: 'Audiowide', cursive;
     margin: auto 0;
+    background: url(https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/gallery/5885ea915bafe87c30cc8c3c/espinacas.jpg);
+    background-size: cover;
 }
-.navigation {
+.nav {
     color: #111;
-    
 }
 
 @media only screen and (max-width:600px) {
@@ -11,65 +13,74 @@ body {
         font-size: .4em;
         padding:0;
     } 
-    .img-portada {
+    .header_image--cover {
         block-size: 23vh;
         
     }
-    .imago{
+    .container__img{
     block-size:15vh;
     } 
 }
 
-.navigation_nav {
+.nav__bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    position: fixed;
+    
 }
 
-.navigation__list {
+.nav__bar__list {
     list-style-type: none;
-    margin: 0;
+    margin:0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background: rgb(87, 235, 119);
+    text-decoration: none;
+    height: 3rem;
+  
 }
 
-.navigation__link {
+.nav__item {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 10px;
     text-decoration: none;
 }
 
-.navigation__link:hover {
-    background-color: #111;
+.nav__item:hover {
+    background-color: rgb(121, 233, 253);
+    text-decoration: none;
 }
 
-.navigation__item {
+.nav__item--right {
     float: right;
+    color: white;
 }
  
-.navigation__item--left {
+.nav__item--left {
     float: left;
+    color: white;
 }    
 
-.heading-primary {
+.header__text--box {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header--primary {
     font-size: 5rem;
     margin-top: 1rem;
+    text-shadow: 10px 7px 10px white;
 }
 
-.header__text-box {
-    text-align: center;
-}
-
-.header__image-box {
+.header__image--box {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    
+    text-align: center;    
 }
 
 .header_image {
@@ -78,36 +89,33 @@ body {
     border: gray solid;
 }
 
+.header_image--cover {  
+    border: .5px gray;
+    border-radius: 50px;
+    margin-top: 3rem;
+}
+
+button {
+    margin: 0;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    align-items: center;
-    justify-content: center;
-    margin: 0;   
-}
-
-.box-image {
-    margin: 10px;
-}
-
-.imago {    
+.container__img {    
     border: .5px gray;
     border-radius: 50px;
     height: 300px;
     width: 300px;
-    margin: 20px;
+    margin: 35px;
 }
 
-.ft {
-    background: gray;
+.footer {
+    background: rgb(87, 235, 119);
     display: flex;
     text-align: center;
     align-items: center;
@@ -115,10 +123,6 @@ body {
     width: 100%;
     height: 20px;
     font-size: 15px;
-    color: black;
+    color: white;
 }
 
-.img-portada {  
-    border: .5px gray;
-    border-radius: 50px;
-}
