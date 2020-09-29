@@ -4,34 +4,22 @@ body {
     background: url(https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/gallery/5885ea915bafe87c30cc8c3c/espinacas.jpg);
     background-size: cover;
 }
-.nav {
-    color: #111;
-}
 
-@media only screen and (max-width:600px) {
-    .main-nav {
-        font-size: .4em;
-        padding:0;
-    } 
-    .header_image--cover {
-        block-size: 23vh;
-        
-    }
-    .container__img{
-    block-size:15vh;
-    } 
-}
-
-.nav__bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+nav {
     position: fixed;
-    
+    top: 0;
+    width: 100%;
 }
 
-.nav__bar__list {
+.navbar__image-logo {
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.navbar__list {
     list-style-type: none;
     margin:0;
     padding: 0;
@@ -39,10 +27,23 @@ body {
     background: rgb(87, 235, 119);
     text-decoration: none;
     height: 3rem;
-  
 }
 
-.nav__item {
+@media only screen and (max-width:600px) {
+    .navbar__list{
+        font-size: .4em;
+        padding:0;
+    } 
+    .header__image-cover {
+        block-size: 23vh;
+        
+    }
+    .container__image{
+    block-size:15vh;
+    } 
+}
+
+.navbar__item {
     display: block;
     color: white;
     text-align: center;
@@ -50,37 +51,41 @@ body {
     text-decoration: none;
 }
 
-.nav__item:hover {
+.navbar__item:hover {
     background-color: rgb(121, 233, 253);
     text-decoration: none;
 }
 
-.nav__item--right {
+.navbar__item--right {
     float: right;
     color: white;
 }
  
-.nav__item--left {
+.navbar__item--left {
     float: left;
     color: white;
 }    
 
-.header__text--box {
+.header {
     text-align: center;
     margin-top: 100px;
 }
 
-.header--primary {
+.header__title {
     font-size: 5rem;
     margin-top: 1rem;
     text-shadow: 10px 7px 10px white;
 }
 
-.header__image--box {
+.header__image-box {
     display: flex;
+    margin-left: 20%; 
+    margin-top: 3%;
+    margin-bottom: 0;
     align-items: center;
     justify-content: center;
-    text-align: center;    
+    width: 55%;
+    border-radius: 50px;    
 }
 
 .header_image {
@@ -89,16 +94,13 @@ body {
     border: gray solid;
 }
 
-.header_image--cover {  
-    border: .5px gray;
+.header__image-cover {  
+    border: .5% gray;
     border-radius: 50px;
-    margin-top: 3rem;
+    margin: 3%;
 }
 
-button {
-    margin: 0;
-}
-.container {
+.menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -106,12 +108,18 @@ button {
     margin-top: 4rem;
 }
 
-.container__img {    
+.menu__image {    
     border: .5px gray;
     border-radius: 50px;
     height: 300px;
     width: 300px;
     margin: 35px;
+    box-shadow: 10px 10px 4px rgba(101, 110, 78, 0.616)
+}
+.menu__image:hover {
+    transition: all .3s;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.753)
 }
 
 .footer {

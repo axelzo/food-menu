@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Food Menu | Good food</title>
-</head>
-<body>
-    <div class="nav">
-        <nav class="nav__bar">
-            <ul class="nav__bar__list main-nav">
-                <li class="nav__item nav__item--left ">
-                    <a class="nav__item" href="#">logo</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <title>Food Menu | Good food</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="script.js"></script>
+        <nav>
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--left ">
+                    <a class="navbar__item" href="#">
+                        <img 
+                        class="navbar__image-logo" 
+                        src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/752/3833771752_f5dc0fac-184c-46ea-9b15-ed3d5a336d83.png?cb=1601519939" 
+                        alt="LOGO">
+                    </a>
                 </li>
-                <li class="nav__item nav__item--right">
-                    <a class="nav__item" href="#">Food Menu</a>
+                <li class="navbar__item navbar__item--right">
+                    <a class="navbar__item" href="#" onclick="signIn()">Login</a>
                 </li>
-                <li class="nav__item nav__item--right">
-                    <a class="nav__item" href="#">Our Options</a>
+                <li class="navbar__item navbar__item--right">
+                    <a class="navbar__item" href="#">Our Options</a>
                 </li>
-                <li class="nav__item nav__item--right">
-                    <a class="nav__item" href="#">Popular food</a>
+                <li class="navbar__item navbar__item--right">
+                    <a class="navbar__item" href="#">Popular food</a>
                 </li>
-                <li class="nav__item nav__item--right">
-                    <a class="nav__item" href="#">Food Stories</a>
+                <li class="navbar__item navbar__item--right">
+                    <a class="navbar__item" href="#">Food Stories</a>
                 </li>
-                <li class="nav__item nav__item--right">
-                    <a class="nav__item" href="#">Food now</a>
+                <li class="navbar__item navbar__item--right">
+                    <a class="navbar__item" href="#">Food now</a>
                 </li>
             </ul>
         </nav>
-    </div>
-    <header>
-        <div class="header__text--box">
-            <h1 class="header--primary">
-                <span class="heading-primary main-nav">Our Food</span>
-                <span class="heading-primary main-nav">is healthy food</span>
+        <header class="header">
+            <h1 class="header__title">
+                <span>Our Food is healthy food</span>
             </h1>
-        </div>
-        <div class="header__image--box">
+            <div class="header__image-box">
+                <img 
+                    class="header__image-cover" 
+                    src="https://www.gethealthystayhealthy.com/sites/default/files/styles/article_image_default/public/2020-02/como-comer-de-forma-saludable%20_0.png?itok=jYZC6FBV" 
+                    alt="Logo"
+                >
+            </div>
+        </header>
+        <div class="menu">
             <img 
-                class="header_image--cover" 
-                src="https://www.gethealthystayhealthy.com/sites/default/files/styles/article_image_default/public/2020-02/como-comer-de-forma-saludable%20_0.png?itok=jYZC6FBV" 
-                alt="Logo"
-            >
-        </div>
-        <div class="container">
-            <img 
-                class="container__img" 
+                class="menu__image" 
                 src="https://www.superama.com.mx/views/micrositio/recetas/images/masbuscadas/chilaquiles/Web_fotoreceta.jpg" 
                 alt="chilaquiles"
             >   
             <img 
-                class="container__img" 
+                class="menu__image" 
                 src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/02/aguachilerojo.jpg" 
                 alt="aguachile rojo"
             >
             <img 
-                class="container__img" 
+                class="menu__image" 
                 src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/lasagnadepimientos.jpg" 
                 alt="lasagna"
             >
         </div>
         <footer class="footer">Our Food is Your Food</footer>
-    </header>
     </body>
 </html>
+
