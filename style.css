@@ -134,3 +134,10 @@ nav {
     color: white;
 }
 
+.image__text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 10px 7px 10px black;
+}
+
